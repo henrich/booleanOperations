@@ -1,0 +1,17 @@
+Source: booleanoperations
+Section: python
+Priority: optional
+Maintainer: Hideki Yamane <henrich@debian.org>
+Build-Depends: debhelper (>= 9), dh-python,
+               python-all-dev,
+               cython,
+Standards-Version: 3.9.6
+Homepage: https://github.com/typemytype/booleanOperations
+#Vcs-Git: git://anonscm.debian.org/collab-maint/booleanoperations.git
+#Vcs-Browser: https://anonscm.debian.org/gitweb/?p=collab-maint/booleanoperations.git;a=summary
+
+Package: python-booleanoperations
+Architecture: any
+Depends: ${shlibs:Depends}, ${python:Depends}, ${misc:Depends}
+Description: Boolean operations on paths
+ Boolean operations on paths based on a super fast polygon clipper library.
